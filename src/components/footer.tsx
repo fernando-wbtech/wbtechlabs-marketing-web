@@ -1,14 +1,14 @@
-import { Cpu } from "lucide-react";
+import { Cpu, Mail, Phone } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="w-full bg-zinc-950 border-t border-zinc-900 py-10">
-      <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center max-w-6xl">
-        
+      <div className="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center max-w-6xl gap-6">
+
         {/* Logo / Brand */}
-        <div className="flex items-center gap-2 mb-4 md:mb-0">
+        <div className="flex items-center gap-2">
           <Cpu className="w-5 h-5 text-emerald-500" />
           <span className="text-zinc-100 font-bold tracking-tight">WB Tech Labs</span>
         </div>
@@ -19,11 +19,21 @@ export default function Footer() {
           Ingeniería Electrónica y Ciberseguridad B2B.
         </div>
 
-        {/* Enlaces simples */}
-        <div className="flex gap-6 mt-4 md:mt-0 text-sm font-medium text-zinc-400">
-          <a href="#" className="hover:text-emerald-400 transition-colors">LinkedIn</a>
-          <a href="#" className="hover:text-emerald-400 transition-colors">Portal de Clientes</a>
-          <a href="mailto:contacto@wbtechlabs.com" className="hover:text-emerald-400 transition-colors">Contacto</a>
+        {/* Enlaces corporativos y Contacto */}
+        <div className="flex flex-wrap justify-center gap-6 text-sm font-medium text-zinc-400">
+          <a href="https://www.linkedin.com/in/wilmer-jose-fernando-benites-huaman%C3%AD/" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
+            LinkedIn
+          </a>
+          <a href="https://portal.wbtechlabs.com" className="hover:text-emerald-400 transition-colors">
+            Portal B2B
+          </a>
+          <a href="mailto:fernando@wbtechlabs.com" className="flex items-center gap-1.5 hover:text-emerald-400 transition-colors">
+            <Mail className="w-4 h-4" /> Email
+          </a>
+          {/* Enlace directo a WhatsApp B2B */}
+          <a href="https://wa.me/51961482749" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 hover:text-emerald-400 transition-colors">
+            <Phone className="w-4 h-4" /> +51 961482749
+          </a>
         </div>
 
       </div>

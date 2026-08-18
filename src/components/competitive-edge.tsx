@@ -44,9 +44,14 @@ export default function CompetitiveEdge() {
               <p className="text-zinc-400 mb-8 text-sm md:text-base">
                 Agende una consulta técnica directa de 30 minutos con nuestro Ingeniero Principal. Analizaremos sus vulnerabilidades y cuellos de botella operativos sin compromiso.
               </p>
-              <Button size="lg" className="w-full bg-emerald-600 text-white hover:bg-emerald-700 font-semibold h-12 rounded-md transition-colors">
-                Solicitar Auditoría Gratuita
-              </Button>
+              
+              {/* Botón CTA conectado a WhatsApp */}
+              <a href="https://wa.me/51961482749?text=Hola%20Fernando,%20vengo%20de%20la%20web%20y%20deseo%20solicitar%20la%20Auditor%C3%ADa%20T%C3%A9cnica%20Gratuita%20para%20mi%20infraestructura." target="_blank" rel="noopener noreferrer" className="w-full">
+                <Button size="lg" className="w-full bg-emerald-600 text-white hover:bg-emerald-700 font-semibold h-12 rounded-md transition-colors">
+                  Solicitar Auditoría Gratuita
+                </Button>
+              </a>
+
               <p className="text-zinc-500 text-xs mt-4">
                 *Sesión exclusiva para directores de planta, operaciones y gerentes B2B.
               </p>

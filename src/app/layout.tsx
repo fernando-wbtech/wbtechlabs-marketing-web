@@ -17,25 +17,31 @@ export const viewport: Viewport = {
   themeColor: "#09090b",
 };
 
-// Tarjeta de Presentación Digital y SEO Global
+// Tarjeta de Presentación Digital corporativa y SEO B2B (Actualizado a 6 pilares)
 export const metadata: Metadata = {
-  title: "WB Tech Labs | Ingeniería Electrónica y Ciberseguridad B2B",
-  description: "Firma global de arquitectura Edge, mantenimiento predictivo (PdMaaS), ciberseguridad IoT y optimización automotriz B2B.",
+  title: "WB Tech Labs | Ingeniería, Automatización y Consultoría Deep Tech",
+  description: "Construyendo arquitecturas seguras y escalables para el sector industrial y automotriz. Integramos ecosistemas Edge-to-Cloud, control industrial remoto (SCADA/PLC) y Mantenimiento Predictivo (PdMaaS).",
   keywords: [
-    "IoT", 
     "Edge AI", 
-    "Ciberseguridad", 
+    "Ciberseguridad IoT", 
+    "Cloud Architecture", 
     "ECU Tuning", 
-    "Mantenimiento Predictivo", 
-    "Hardware Security"
+    "Automatización PLC", 
+    "Consultoría I+D",
+    "Mantenimiento Predictivo"
   ],
   openGraph: {
-    title: "WB Tech Labs | Arquitectura para la Industria Crítica",
-    description: "Diseñamos, aseguramos y optimizamos infraestructura tecnológica Edge e IoT.",
+    title: "WB Tech Labs | Ingeniería B2B de Alto Rendimiento",
+    description: "Deep Tech B2B: Mantenimiento Predictivo, Seguridad Edge, SCADA y Optimización de Hardware.",
     url: "https://wbtechlabs.com",
     siteName: "WB Tech Labs",
     locale: "es_PE",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WB Tech Labs | Ingeniería B2B de Alto Rendimiento",
+    description: "Construyendo arquitecturas seguras y escalables para la industria crítica.",
   },
 };
 

@@ -9,8 +9,8 @@ export default function ServicesSection() {
       icon: <Activity className="w-6 h-6 text-emerald-500" />,
     },
     {
-      title: "Automatización Remota (PLC/SCADA)",
-      description: "Programación avanzada y control a distancia. Elevamos la eficiencia de su planta integrando lógicas robustas de supervisión sin fronteras geográficas.",
+      title: "Automatización & Robótica (PLC/CNC)",
+      description: "Programación avanzada de PLCs, HMIs y SCADA a distancia. Integramos lógicas de control para brazos robóticos (KUKA) y mecanizado CNC, elevando la eficiencia de su planta sin fronteras.",
       icon: <Factory className="w-6 h-6 text-emerald-500" />,
     },
     {
@@ -19,8 +19,8 @@ export default function ServicesSection() {
       icon: <Shield className="w-6 h-6 text-emerald-500" />,
     },
     {
-      title: "Arquitectura Cloud IoT",
-      description: "Diseño de backends distribuidos para flotas masivas. Implementamos brokers MQTT de alta disponibilidad y bases de datos de series temporales.",
+      title: "Cloud IoT & Redes Industriales (OT)",
+      description: "Diseño de backends distribuidos y configuración de redes físicas (Routers, Switches, Enlaces RF). Implementamos brokers MQTT de alta disponibilidad para telemetría determinista.",
       icon: <Network className="w-6 h-6 text-emerald-500" />,
     },
     {
@@ -29,8 +29,8 @@ export default function ServicesSection() {
       icon: <Cpu className="w-6 h-6 text-emerald-500" />,
     },
     {
-      title: "Consultoría I+D y Mentoría",
-      description: "Asesoría experta para empresas que desarrollan hardware y validación técnica académica. Transformamos la complejidad en arquitecturas viables y escalables.",
+      title: "Consultoría I+D & Prototipado 3D",
+      description: "Asesoría experta en desarrollo de hardware y validación técnica. Transformamos la complejidad en arquitecturas viables, acelerando su innovación mediante prototipado rápido (Impresión 3D).",
       icon: <GraduationCap className="w-6 h-6 text-emerald-500" />,
     }
   ];

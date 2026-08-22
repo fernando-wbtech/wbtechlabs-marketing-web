@@ -10,10 +10,10 @@ export default function HeroSection() {
 
       <div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col items-center text-center">
         
-        {/* Eyebrow Badge Actualizado */}
-        <Badge variant="outline" className="border-zinc-700/80 text-zinc-300 mb-8 py-1.5 px-4 bg-zinc-900/50 backdrop-blur-md">
-          <ShieldCheck className="w-4 h-4 mr-2 text-emerald-500" />
-          <span className="tracking-wide text-xs uppercase font-semibold">
+        {/* Eyebrow Badge Actualizado (Fix Mobile Overflow) */}
+        <Badge variant="outline" className="border-zinc-700/80 text-zinc-300 mb-8 py-1.5 px-3 sm:px-4 bg-zinc-900/50 backdrop-blur-md max-w-[90vw] text-center">
+          <ShieldCheck className="w-4 h-4 mr-2 text-emerald-500 shrink-0" />
+          <span className="tracking-wide text-[10px] sm:text-xs uppercase font-semibold whitespace-normal leading-tight">
             Ingeniería, Automatización y Consultoría Deep Tech
           </span>
         </Badge>

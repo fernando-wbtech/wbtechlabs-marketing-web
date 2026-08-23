@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, ShieldCheck, Cpu, Cloud, Settings, Factory, GraduationCap } from "lucide-react";
+import { ArrowRight, ShieldCheck, Cpu, Cloud, Settings, Factory, GraduationCap, Network } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -10,10 +10,10 @@ export default function HeroSection() {
 
       <div className="relative z-10 container mx-auto px-4 md:px-6 flex flex-col items-center text-center">
         
-        {/* Eyebrow Badge Actualizado (Fix Mobile Overflow) */}
-        <Badge variant="outline" className="border-zinc-700/80 text-zinc-300 mb-8 py-1.5 px-3 sm:px-4 bg-zinc-900/50 backdrop-blur-md max-w-[90vw] text-center">
+        {/* Eyebrow Badge (Fix Mobile Overflow & Altura Cortada) */}
+        <Badge variant="outline" className="h-auto py-2 px-3 sm:px-4 border-zinc-700/80 text-zinc-300 mb-8 bg-zinc-900/50 backdrop-blur-md max-w-[90vw] text-center">
           <ShieldCheck className="w-4 h-4 mr-2 text-emerald-500 shrink-0" />
-          <span className="tracking-wide text-[10px] sm:text-xs uppercase font-semibold whitespace-normal leading-tight">
+          <span className="tracking-wide text-[10px] sm:text-xs uppercase font-semibold whitespace-normal leading-relaxed">
             Ingeniería, Automatización y Consultoría Deep Tech
           </span>
         </Badge>
@@ -26,12 +26,12 @@ export default function HeroSection() {
           </span>
         </h1>
         
-        {/* Subtítulo Refinado (Sin redundancias) */}
+        {/* Subtítulo Refinado (Incluye Robótica, CNC y Redes OT) */}
         <p className="max-w-2xl text-lg md:text-xl text-zinc-400 mb-10 leading-relaxed font-light">
-          Diseñamos, automatizamos y protegemos infraestructura crítica. Integramos ecosistemas Edge-to-Cloud, control industrial remoto (SCADA/PLC) y consultoría de I+D para garantizar tolerancia a fallos cero en sus operaciones.
+          Diseñamos, automatizamos y protegemos infraestructura crítica. Integramos robótica industrial (KUKA/CNC), redes OT y ecosistemas Edge-to-Cloud, garantizando tolerancia a fallos cero en sus operaciones.
         </p>
         
-        {/* Botones de Acción (Ambos 100% funcionales) */}
+        {/* Botones de Acción */}
         <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
           <a href="https://wa.me/51961482749?text=Hola%20Fernando,%20estoy%20interesado%20en%20los%20servicios%20de%20WB%20Tech%20Labs.%20Me%20gustar%C3%ADa%20agendar%20una%20auditor%C3%ADa%20t%C3%A9cnica." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
             <Button size="lg" className="w-full bg-zinc-100 text-zinc-950 hover:bg-zinc-300 font-semibold h-12 px-8 rounded-md transition-colors">
@@ -40,7 +40,6 @@ export default function HeroSection() {
             </Button>
           </a>
           
-          {/* Botón Explorar Soluciones Activado */}
           <a href="#servicios" className="w-full sm:w-auto">
             <Button size="lg" variant="outline" className="w-full border-zinc-700 text-zinc-300 hover:bg-zinc-800 hover:text-white font-medium h-12 px-8 bg-zinc-900/30 rounded-md transition-colors">
               Explorar Soluciones
@@ -48,14 +47,14 @@ export default function HeroSection() {
           </a>
         </div>
 
-        {/* 6 Pilares Técnicos Inferiores */}
+        {/* 6 Pilares Técnicos Inferiores (Sincronizados con el nuevo modelo B2B) */}
         <div className="mt-20 pt-8 border-t border-zinc-800/50 w-full max-w-5xl flex flex-wrap justify-center gap-x-8 gap-y-4 opacity-80">
            <div className="flex items-center text-zinc-400 gap-2 text-sm font-medium"><Cpu className="w-4 h-4 text-emerald-500/80" /> Edge AI & FPGA</div>
-           <div className="flex items-center text-zinc-400 gap-2 text-sm font-medium"><Factory className="w-4 h-4 text-emerald-500/80" /> Automatización PLC</div>
-           <div className="flex items-center text-zinc-400 gap-2 text-sm font-medium"><ShieldCheck className="w-4 h-4 text-emerald-500/80" /> Hardware Security</div>
-           <div className="flex items-center text-zinc-400 gap-2 text-sm font-medium"><Cloud className="w-4 h-4 text-emerald-500/80" /> Cloud IoT</div>
-           <div className="flex items-center text-zinc-400 gap-2 text-sm font-medium"><Settings className="w-4 h-4 text-emerald-500/80" /> ECU Tuning</div>
-           <div className="flex items-center text-zinc-400 gap-2 text-sm font-medium"><GraduationCap className="w-4 h-4 text-emerald-500/80" /> Consultoría I+D</div>
+           <div className="flex items-center text-zinc-400 gap-2 text-sm font-medium"><Factory className="w-4 h-4 text-emerald-500/80" /> Robótica & CNC</div>
+           <div className="flex items-center text-zinc-400 gap-2 text-sm font-medium"><ShieldCheck className="w-4 h-4 text-emerald-500/80" /> Ciberseguridad Edge</div>
+           <div className="flex items-center text-zinc-400 gap-2 text-sm font-medium"><Network className="w-4 h-4 text-emerald-500/80" /> Cloud IoT & OT</div>
+           <div className="flex items-center text-zinc-400 gap-2 text-sm font-medium"><Settings className="w-4 h-4 text-emerald-500/80" /> ECU Tuning B2B</div>
+           <div className="flex items-center text-zinc-400 gap-2 text-sm font-medium"><GraduationCap className="w-4 h-4 text-emerald-500/80" /> I+D & Prototipado 3D</div>
         </div>
       </div>
     </section>

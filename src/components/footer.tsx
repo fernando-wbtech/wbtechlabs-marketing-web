@@ -16,7 +16,7 @@ export default function Footer() {
         {/* Legal & Copyright */}
         <div className="text-zinc-500 text-sm font-light text-center md:text-left">
           &copy; {currentYear} WB Tech Labs. Todos los derechos reservados. <br className="md:hidden" />
-          Ingeniería Electrónica y Ciberseguridad B2B.
+          Arquitectura Deep Tech, Robótica y Ciberseguridad Industrial B2B.
         </div>
 
         {/* Enlaces corporativos y Contacto */}

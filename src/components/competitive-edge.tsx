@@ -10,7 +10,7 @@ export default function CompetitiveEdge() {
   ];
 
   return (
-    <section className="w-full py-24 bg-zinc-950 flex justify-center border-t border-zinc-900/50">
+    <section className="w-full pt-24 pb-12 md:pb-16 bg-zinc-950 flex justify-center border-t border-zinc-900/50">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           

@@ -36,7 +36,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="servicios" className="w-full py-24 bg-zinc-950 border-t border-zinc-900 scroll-mt-10">
+    <section id="servicios" className="w-full pt-24 pb-12 bg-zinc-950 border-t border-zinc-900 scroll-mt-10">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col items-center justify-center text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-zinc-100 mb-4">

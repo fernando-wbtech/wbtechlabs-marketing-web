@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import JsonLd from "@/components/json-ld"; // <-- INYECCIÓN DEL SCHEMA B2B
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,7 +21,7 @@ export const viewport: Viewport = {
 
 // Tarjeta de Presentación Digital corporativa y SEO B2B (Actualizado a 6 pilares)
 export const metadata: Metadata = {
-  metadataBase: new URL("https://wbtechlabs.com"), // <-- RUTA ABSOLUTA FORZADA (El Seguro Arquitectónico)
+  metadataBase: new URL("https://wbtechlabs.com"),
   title: "WB Tech Labs | Ingeniería, Automatización y Consultoría Deep Tech",
   description: "Construyendo arquitecturas seguras y escalables para el sector industrial y automotriz. Integramos ecosistemas Edge-to-Cloud, control industrial remoto (SCADA/PLC) y Mantenimiento Predictivo (PdMaaS).",
   keywords: [
@@ -58,6 +59,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-zinc-950">
+        <JsonLd /> {/* <-- DECLARACIÓN DE AUTORIDAD CORPORATIVA INVISIBLE AL USUARIO */}
         {children}
         <Analytics />
       </body>
